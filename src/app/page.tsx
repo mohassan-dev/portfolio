@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<Flex component={Center} h="100%" ta="center" align="center" display="flex" justify="center">
 			<Stack gap="xl">
-				<Title>Welcome! I'm Mohamed Hassan</Title>
+				<Title>Welcome! I&apos;m Mohamed Hassan</Title>
 
 				<Text>Stay tuned, this is a work in progress.</Text>
 
