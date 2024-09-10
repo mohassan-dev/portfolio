@@ -1,0 +1,77 @@
+.container {
+	height: fit-content;
+	min-height: fit-content;
+	margin: 0 4rem;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.leftSection {
+	width: 80%;
+}
+
+.jobTitle {
+	font-size: rem(20px);
+	font-family: Epilogue;
+	font-weight: 600;
+}
+
+.title {
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+
+	font-size: rem(68px);
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+
+	@media screen and (max-width: 768px) {
+		font-size: 5rem;
+	}
+}
+
+.subTitle {
+	font-size: rem(20px);
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: rem(50px);
+	gap: 1rem;
+	width: 3rem;
+	margin-left: auto;
+}
+
+.socials > div {
+	margin: 0 auto;
+	border-width: 3px;
+	border-color: black;
+}
+
+.socials svg {
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+}
+
+.ctaButton {
+	background-color: #2d2d2d;
+	color: white;
+
+	font-family: Epilogue;
+	font-weight: 600;
+	margin-top: 3rem;
+	padding: 24px 64px;
+}
+
+.ctaButton:hover {
+	background-color: var(--mantine-color-violet-7);
+}
+
+.socials svg:hover > path {
+	fill: var(--mantine-color-violet-7);
+}
