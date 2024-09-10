@@ -8,10 +8,9 @@ export default function Contact() {
 			</Title>
 
 			<Card shadow="xl">
-				<Text>I'm always open to new opportunities and collaborations. If you have any questions or just want to say hi, feel free to reach out to me.</Text>
-
 				<Text>
-					React out at <a href="mailto:me@mohamed-hassan.dev">me@mohamed-hassan.dev</a>
+					I'm always open to new opportunities and collaborations. If you have any questions or just want to say hi, feel free to reach out to me at{" "}
+					<a href="mailto:me@mohamed-hassan.dev">me@mohamed-hassan.dev</a>.
 				</Text>
 			</Card>
 		</Container>
