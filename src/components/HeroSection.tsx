@@ -22,7 +22,7 @@ export default function HeroSection() {
 					<Text inherit span c="violet" fw="bolder">
 						Web App
 					</Text>{" "}
-					Development
+					Develop&shy;ment
 				</Title>
 
 				<Text className={classes.subTitle}>
