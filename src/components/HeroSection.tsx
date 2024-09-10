@@ -29,7 +29,7 @@ export default function HeroSection() {
 					Turning innovative ideas into powerful, scalable web applications. Specializing in end-to-end development for startups and businesses where technology is a core driver of growth.
 				</Text>
 
-				<Link href="/contact">
+				<Link href="/contact" className={classes.ctaContainer}>
 					<UnstyledButton className={classes.ctaButton}>Turn your ideas into reality</UnstyledButton>
 				</Link>
 			</div>

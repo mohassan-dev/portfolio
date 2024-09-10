@@ -25,7 +25,7 @@
 .headerLinks {
 	display: flex;
 
-	font-family: Epilogue;
+	font-family: var(--font-epilogue);
 	font-size: 17px;
 	gap: 2rem;
 

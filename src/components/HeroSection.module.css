@@ -13,19 +13,18 @@
 
 .leftSection {
 	width: 80%;
+	display: flex;
+	flex-direction: column;
 
 	@media screen and (max-width: 768px) {
 		width: 100%;
-
 		word-break: break-word;
-
-		hyphens: auto;
 	}
 }
 
 .jobTitle {
 	font-size: rem(20px);
-	font-family: Epilogue;
+	font-family: var(--font-epilogue);
 	font-weight: 600;
 	text-align: center;
 }
@@ -73,10 +72,20 @@
 	background-color: #2d2d2d;
 	color: white;
 
-	font-family: Epilogue;
+	font-family: var(--font-epilogue);
 	font-weight: 600;
-	margin-top: 3rem;
 	padding: 24px 64px;
+}
+
+.ctaContainer {
+	margin-top: 3rem;
+	width: fit-content;
+	max-height: fit-content;
+
+	@media screen and (max-width: 768px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .ctaButton:hover {
