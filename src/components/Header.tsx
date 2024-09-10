@@ -6,9 +6,7 @@ export default function Header() {
 	return (
 		<nav className={classes.header}>
 			<Link href="/" className={classes.link}>
-				<Text className={classes.title} ff="Epilogue" fw="600">
-					MOHAMED HASSAN
-				</Text>
+				<Text className={classes.title}>MOHAMED HASSAN</Text>
 			</Link>
 
 			<div className={classes.headerLinks}>
