@@ -39,7 +39,7 @@ export default function HeroSection() {
 					<GithubIcon />
 				</Link>
 
-				<Link href="/">
+				<Link href="https://www.linkedin.com/in/mdhn6832/">
 					<LinkedinIcon />
 				</Link>
 			</div>
