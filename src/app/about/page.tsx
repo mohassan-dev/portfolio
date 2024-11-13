@@ -2,12 +2,19 @@ import {
   Anchor,
   Card,
   Center,
+  CheckIcon,
   Container,
   Divider,
+  Grid,
+  GridCol,
+  List,
+  ListItem,
   Text,
+  ThemeIcon,
   Title,
 } from "@mantine/core";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mohamed Hassan - About",
@@ -23,12 +30,13 @@ export default function Contact() {
       </Title>
 
       <Card shadow="xl">
-        <Text>
-          Full Stack Developer who transforms complex technical challenges
-          into elegant, secure, and scalable solutions. With expertise in
-          Python, Django, React, NextJs, AWS and GCP, I specialize in building
-          full-stack applications that drive business growth and user
-          satisfaction.
+        <Text size="lg" mt="sm">
+          Passionate full-stack software developer specializing in AI-powered
+          business apps and workflow automation. With years of experience
+          building secure, scalable applications, I combine deep technical
+          expertise with a keen eye for user experience. Whether working on the
+          backend or crafting a seamless front-end, my goal is always to create
+          solutions that enhance productivity and drive business growth.
           <Anchor href="/resume.pdf" target="_blank" ml="xs">
             [View Resume]
           </Anchor>
@@ -36,72 +44,67 @@ export default function Contact() {
 
         <Divider my="sm" />
 
-        <Text mt="md">
-          In my <Anchor href="/projects"> recent projects</Anchor>, I have:
-        </Text>
-
-        <Text mt="sm" component="ul" ml="lg">
-          <li>
-            <Text fw="bolder" span>
-              Enhanced Data Security
+        {/* What I Do Section */}
+        <Grid mt="xl">
+          <GridCol span={12}>
+            <Title order={2}>What I Do</Title>
+            <Text size="lg" mt="sm">
+              I specialize in backend development with Django, frontend with
+              Next.js & React, and cloud services like AWS and GCP. I’ve worked
+              on a wide range of{" "}
+              <Anchor href="/projects" component={Link}>
+                projects
+              </Anchor>
+              , from AI-powered applications to complex data-driven platforms.
             </Text>
-            : Engineered robust app-level encryption system using both symmetric
-            and asymmetric cryptography. The system was used to encrypt an
-            organization's data in the app-level.
-          </li>
+          </GridCol>
+        </Grid>
 
-          <li>
-            <Text fw="bolder" span>
-              Optimized Deployment & Scalability
-            </Text>
-            : Leveraged Docker containerization to reduce deployment times by
-            50% and integrated CI/CD pipelines using Github Actions, and
-            Bitbucket pipelines to test & deploy applications.
-          </li>
-          <li>
-            <Text fw="bolder" span>
-              Streamlined Data Integration
-            </Text>
-            : Developed unified data models using polymorphism, making
-            cross-system data integration seamless and efficient.
-          </li>
-          <li>
-            <Text fw="bolder" span>
-              Improved User Experience
-            </Text>
-            : Implemented a URL redirection system that boosted SEO performance
-            and improved navigation.
-          </li>
-          <li>
-            <Text fw="bolder" span>
-              Simplified Payment Processing
-            </Text>
-            : Integrated Stripe for subscription management, making payment
-            processing both secure and user-friendly.
-          </li>
-        </Text>
+        {/* Skills Section */}
+        <Grid mt="xl">
+          <GridCol span={12}>
+            <Title order={3}>Skills</Title>
+            <List spacing="xs" size="lg" mt="sm" ml="xs">
+              <ListItem>Backend (Django & .NET)</ListItem>
+              <ListItem>Frontend (Next.js & React)</ListItem>
+              <ListItem>CI/CD (Github Actions & Bitbucket Pipelines)</ListItem>
+              <ListItem>Cloud (AWS & GCP)</ListItem>
+            </List>
+          </GridCol>
+        </Grid>
 
-        <Text mt="md">
-          I’ve also developed AI-powered tools, including applications for
-          research coding, audio transcription, and user interaction with AI
-          chat models. Each tool has been meticulously designed to provide
-          practical, user-centered solutions while driving organizational
-          productivity.
-        </Text>
+        {/* Approach Section */}
+        <Grid mt="xl">
+          <GridCol span={12}>
+            <Title order={3}>My Approach</Title>
+            <Text size="lg" mt="sm">
+              I build applications that are secure, scalable, and user-friendly.
+              My goal is to automate labor-intensive processes and simplify
+              complex systems, making them more accessible for users.
+            </Text>
+          </GridCol>
+        </Grid>
 
-        <Divider my="sm" />
+        {/* Contact Section */}
+        <Grid mt="xl">
+          <GridCol span={12}>
+            <Title order={3}>Let’s Connect</Title>
 
-        <Text mt="md">
-          Looking to bring technical expertise to your team? Let's connect on{" "}
-          <Anchor
-            href="https://linkedin.com/in/mohamedhassan68"
-            target="_blank"
-          >
-            LinkedIn
-          </Anchor>{" "}
-          or reach out directly at{" "}
-          <Anchor href="me@mohassan.dev">me@mohassan.dev</Anchor>.
-        </Text>
+            <Text size="lg" mt="sm">
+              If you’re looking for a developer who can bring AI-driven
+              solutions and optimized workflows to life, feel free to connect on{" "}
+              <Anchor
+                href="https://www.linkedin.com/in/mohamedhassan68/"
+                target="_blank"
+              >
+                LinkedIn
+              </Anchor>{" "}
+              or reach out directly at{" "}
+              <Anchor href="mailto:me@mohassan.dev">me@mohassan.dev</Anchor>.
+              I'm always excited to work on new challenges!
+            </Text>
+          </GridCol>
+        </Grid>
       </Card>
     </Container>
   );
