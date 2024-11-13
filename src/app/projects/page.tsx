@@ -94,7 +94,7 @@ export default function Projects() {
 
           {project.link && (
             <Group justify="center">
-              <Anchor href={project.link} size="xs" mt="sm">
+              <Anchor href={project.link} target="_blank" size="xs" mt="sm">
                 <Button size="lg">Visit {project.title}</Button>
               </Anchor>
             </Group>
