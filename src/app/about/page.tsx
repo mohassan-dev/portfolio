@@ -74,7 +74,7 @@ export default function Contact() {
         </Grid>
 
         {/* Approach Section */}
-        <Grid mt="xl">
+        {/* <Grid mt="xl">
           <GridCol span={12}>
             <Title order={3}>My Approach</Title>
             <Text size="lg" mt="sm">
@@ -83,7 +83,7 @@ export default function Contact() {
               complex systems, making them more accessible for users.
             </Text>
           </GridCol>
-        </Grid>
+        </Grid> */}
 
         {/* Contact Section */}
         <Grid mt="xl">
