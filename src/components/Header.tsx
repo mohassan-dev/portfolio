@@ -1,27 +1,93 @@
+"use client";
 import Link from "next/link";
 import classes from "./Header.module.css";
-import { Text } from "@mantine/core";
+import { Burger, Drawer, Text } from "@mantine/core";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import path from "path";
 
 export default function Header() {
-	return (
-		<nav className={classes.header}>
-			<Link href="/" className={classes.link}>
-				<Text className={classes.title}>MOHAMED HASSAN</Text>
-			</Link>
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen((open) => !open);
 
-			<div className={classes.headerLinks}>
-				<Link href="/about" className={classes.link}>
-					About
-				</Link>
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
 
-				<Link href="/work" className={classes.link}>
-					Work
-				</Link>
+  return (
+    <nav className={classes.header}>
+      <Link
+        href="/"
+        className={`${classes.logo} ${classes.link} ${
+          isActive("/") ? classes.active : ""
+        }`}
+      >
+        <Text className={classes.title}>MOHAMED HASSAN</Text>
+      </Link>
 
-				<Link href="/contact" className={classes.link}>
-					Contact
-				</Link>
-			</div>
-		</nav>
-	);
+      <div className={classes.headerLinks}>
+        <Link
+          href="/about"
+          className={`${classes.link} ${
+            isActive("/about") ? classes.active : ""
+          }`}
+        >
+          About
+        </Link>
+
+        <Link
+          href="/projects"
+          className={`${classes.link} ${
+            isActive("/projects") ? classes.active : ""
+          }`}
+        >
+          Projects
+        </Link>
+
+        <Link
+          href="/contact"
+          className={`${classes.link} ${
+            isActive("/contact") ? classes.active : ""
+          }`}
+        >
+          Contact
+        </Link>
+      </div>
+
+      <div className={classes.headerLinksMobile}>
+        <Burger size="lg" opened={isOpen} onClick={toggle} />
+      </div>
+
+      <Drawer
+        opened={isOpen}
+        onClose={toggle}
+        title={
+          <Link href="/" className={classes.link}>
+            <Text className={classes.title}>MOHAMED HASSAN</Text>
+          </Link>
+        }
+        size="100%"
+        closeButtonProps={{
+          size: 60,
+          style: {
+            marginRight: "1rem",
+            color: "black",
+          },
+        }}
+      >
+        <div className={classes.drawerLinks}>
+          <Link href="/about" className={classes.link} onClick={toggle}>
+            About
+          </Link>
+
+          <Link href="/projects" className={classes.link} onClick={toggle}>
+            Work
+          </Link>
+
+          <Link href="/contact" className={classes.link} onClick={toggle}>
+            Contact
+          </Link>
+        </div>
+      </Drawer>
+    </nav>
+  );
 }

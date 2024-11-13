@@ -1,48 +1,65 @@
-import { Button, Divider, Flex, Text, Title, UnstyledButton } from "@mantine/core";
-
+"use client";
+import useIsMobile from "@/hooks/useIsMobile";
+import {
+  Container,
+  Title,
+  Text,
+  Button,
+  Group,
+  Grid,
+  GridCol,
+  Anchor,
+} from "@mantine/core";
+import Image from "next/image";
 import classes from "./HeroSection.module.css";
 
-import GithubIcon from "@/icons/GithubIcon";
-import LinkedinIcon from "@/icons/LinkedinIcon";
-import Link from "next/link";
-
 export default function HeroSection() {
-	return (
-		<section className={classes.container}>
-			<div className={classes.leftSection}>
-				<Text className={classes.jobTitle}>Full stack Web Developer</Text>
+  const isMobile = useIsMobile();
 
-				<Title order={1} className={classes.title}>
-					Your Trusted{" "}
-					<Text inherit span c="violet" fw="bolder">
-						Partner
-					</Text>
-					<br />
-					for{" "}
-					<Text inherit span c="violet" fw="bolder">
-						Web App
-					</Text>{" "}
-					Develop&shy;ment
-				</Title>
+  return (
+    <Grid mt="lg">
+      <GridCol span={isMobile ? 12 : 8}>
+        <Container size="lg">
+          <div>
+            <Title
+              order={1}
+              ta={isMobile ? "center" : "left"}
+              size="4rem"
+              fw={900}
+              mb="md"
+            >
+              Turning AI into Practical Tools for Your Business
+            </Title>
 
-				<Text className={classes.subTitle}>
-					Turning innovative ideas into powerful, scalable web applications. Specializing in end-to-end development for startups and businesses where technology is a core driver of growth.
-				</Text>
+            <Text ta="left" mt="2rem" size="2rem">
+              I help businesses like yours automate complex workflows with
+              secure, intuitive apps — freeing you up to focus on
+              <Text span fw="bold" c="violet">
+                {" "}
+                what truly matters
+              </Text>
+            </Text>
+          </div>
 
-				<Link href="/contact" className={classes.ctaContainer}>
-					<UnstyledButton className={classes.ctaButton}>Turn your ideas into reality</UnstyledButton>
-				</Link>
-			</div>
+          <Group ta="center" mt="5rem" className={classes.buttonContainer}>
+            <Anchor href="/contact" c="white" underline="never">
+              <Button size="lg" radius="md" variant="filled" component={Button}>
+                Schedule a Consultation
+              </Button>
+            </Anchor>
 
-			<div className={classes.socials}>
-				<Link href="https://github.com/Moe-Hassan-123">
-					<GithubIcon />
-				</Link>
+            <Anchor href="/projects " c="white" underline="never">
+              <Button size="lg" radius="md" variant="outline" color="black">
+                See My Work
+              </Button>
+            </Anchor>
+          </Group>
+        </Container>
+      </GridCol>
 
-				<Link href="https://www.linkedin.com/in/mdhn6832/">
-					<LinkedinIcon />
-				</Link>
-			</div>
-		</section>
-	);
+      <GridCol span={4} pos="relative" visibleFrom="sm">
+        <Image src={"/hero.svg"} fill alt="Hero Image" />
+      </GridCol>
+    </Grid>
+  );
 }
