@@ -35,7 +35,7 @@ export default function Contact() {
           business apps and workflow automation. With years of experience
           building secure, scalable applications, I combine deep technical
           expertise with a keen eye for user experience. Whether working on the
-          backend or crafting a seamless front-end, my goal is always to create
+          backend or crafting a seamless frontend, my goal is always to create
           solutions that enhance productivity and drive business growth.
           <Anchor href="/resume.pdf" target="_blank" ml="xs">
             [View Resume]
