@@ -25,10 +25,10 @@ const AboutSection = () => {
             leveraging AI-driven applications and smart workflow solutions.
           </Text>
           <Text size="lg" mb="md">
-            With experience in helping over a dozen companies from diverse
-            industries, I've developed a deep understanding of how to build
-            scalable, high-performance software solutions that fuel business
-            growth and innovation.
+            With experience in helping companies from diverse industries, I've
+            developed a deep understanding of how to build scalable,
+            high-performance software solutions that fuel business growth and
+            innovation.
           </Text>
         </GridCol>
       </Grid>
