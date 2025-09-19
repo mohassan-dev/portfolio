@@ -17,7 +17,7 @@ export default function Contact() {
       <Card shadow="xl">
         <Text size="lg">
           I'm always open to new opportunities and collaborations. If you have
-          any questions or just want to say hi, feel free to reach out to me at{" "}
+          any questions or inquiries, feel free to reach out to me at{" "}
           <Anchor href="mailto:me@mohassan.dev">me@mohassan.dev</Anchor>.
         </Text>
       </Card>
