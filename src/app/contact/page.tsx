@@ -14,7 +14,7 @@ export default function Contact() {
         Reach Out To Me
       </Title>
 
-      <Card shadow="xl">
+      <Card shadow="xl" mt={"lg"}>
         <Text size="lg">
           I'm always open to new opportunities and collaborations. If you have
           any questions or inquiries, feel free to reach out to me at{" "}

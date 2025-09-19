@@ -52,8 +52,8 @@ export default function Contact() {
               I specialize in backend development with Django, frontend with
               Next.js & React, and cloud services like AWS and GCP. I’ve worked
               on a wide range of{" "}
-              <Anchor href="/projects" component={Link}>
-                projects
+              <Anchor href="/previous-work" component={Link}>
+                products
               </Anchor>
               , from AI-powered applications to complex data-driven platforms.
             </Text>

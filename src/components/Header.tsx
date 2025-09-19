@@ -35,12 +35,12 @@ export default function Header() {
         </Link>
 
         <Link
-          href="/projects"
+          href="/previous-work"
           className={`${classes.link} ${
-            isActive("/projects") ? classes.active : ""
+            isActive("/previous-work") ? classes.active : ""
           }`}
         >
-          Projects
+          Previous Work
         </Link>
 
         <Link
@@ -79,8 +79,8 @@ export default function Header() {
             About
           </Link>
 
-          <Link href="/projects" className={classes.link} onClick={toggle}>
-            Work
+          <Link href="/previous-work" className={classes.link} onClick={toggle}>
+            Previous Work
           </Link>
 
           <Link href="/contact" className={classes.link} onClick={toggle}>

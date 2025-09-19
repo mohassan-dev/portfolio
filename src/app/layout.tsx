@@ -31,8 +31,6 @@ export default function RootLayout({
         <ColorSchemeScript defaultColorScheme="light" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.svg" />
-        <SpeedInsights />
-        <Analytics />
       </head>
 
       <body>
@@ -52,6 +50,9 @@ export default function RootLayout({
             <AppShellMain>{children}</AppShellMain>
           </AppShell>
         </MantineProvider>
+
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

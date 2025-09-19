@@ -48,7 +48,7 @@ export default function HeroSection() {
               </Button>
             </Anchor>
 
-            <Anchor href="/projects " c="white" underline="never">
+            <Anchor href="/previous-work " c="white" underline="never">
               <Button size="lg" radius="md" variant="outline" color="black">
                 See My Work
               </Button>

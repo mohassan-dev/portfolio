@@ -9,10 +9,10 @@ import {
   Title,
 } from "@mantine/core";
 import { Metadata } from "next";
-import classes from "./projects.module.css";
+import classes from "./previousWork.module.css";
 
 export const metadata: Metadata = {
-  title: "Mohamed Hassan - Projects",
+  title: "Mohamed Hassan - Previous Work",
   description:
     "Hi, I'm Mohamed Hassan, a Full Stack Developer who transforms complex technical challenges into elegant, secure, and scalable solutions. With expertise in Python, Django, React, NextJs, AWS and GCP, I specialize in building full-stack applications that drive business growth and user satisfaction.",
 };
@@ -46,13 +46,13 @@ const projects = [
     title: "Petrolafuel",
     description:
       "Petrolafuel is a powerful system designed for business owners to monitor cashier activity and streamline data analysis. By aggregating data from third-party APIs, web scraping, and webhooks, Petrolafuel automatically generates over eight detailed reports, giving teams a comprehensive view of operations and helping them make data-driven decisions with ease.",
-    techStack: ["Django", "Data Analysis", "Webhooks", "API Integration"],
+    techStack: ["Django", "Data Analysis", "Third-Party API Integration"],
     link: "https://automation.petrolafuel.com/",
     thumbnail: "/petrolafuel.png",
   },
 ];
 
-export default function Projects() {
+export default function PreviousWork() {
   return (
     <div>
       {projects.map((project, index) => (
