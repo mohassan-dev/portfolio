@@ -32,7 +32,7 @@ const projects = [
       "AWS",
     ],
     link: "https://mqo.ai/",
-    thumbnail: "/mqo.png",
+    thumbnail: "/mqo.webp",
   },
   {
     title: "Thek A.I.",
@@ -40,7 +40,7 @@ const projects = [
       "Thek A.I. is an AI-powered writing platform designed to help marketing teams elevate their work. With innovative tools for content creation and image generation, Thek A.I. makes writing fast, easy, and SEO-friendly. The platform offers unique tools tailored to meet all your team’s needs, from content to design, boosting productivity without requiring advanced writing skills.",
     techStack: ["Django", "Next.js", "React", "CI/CD", "AI"],
     link: "https://thek.ai/",
-    thumbnail: "/thekai.png",
+    thumbnail: "/thekai.webp",
   },
   {
     title: "Petrolafuel",
@@ -48,7 +48,7 @@ const projects = [
       "Petrolafuel is a powerful system designed for business owners to monitor cashier activity and streamline data analysis. By aggregating data from third-party APIs, web scraping, and webhooks, Petrolafuel automatically generates over eight detailed reports, giving teams a comprehensive view of operations and helping them make data-driven decisions with ease.",
     techStack: ["Django", "Data Analysis", "Third-Party API Integration"],
     link: "https://automation.petrolafuel.com/",
-    thumbnail: "/petrolafuel.png",
+    thumbnail: "/petrolafuel.webp",
   },
 ];
 
